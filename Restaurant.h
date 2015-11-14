@@ -10,9 +10,13 @@
 
 @interface Restaurant : NSObject
 @property NSString* name;
+@property NSString* address;
+@property NSString* comment;
+@property int paidForAll;
 @property int tasteOfFood;
 @property int serviceSpeed;
 @property int quality;
 -(int) tips;
--(id) initWithTaste: (int) taste Speed: (int) speed Quality: (int) quality Name: name;
+-(id) initWithTaste: (int) taste Speed: (int) speed Quality: (int) quality Name: (NSString*)name Address: (NSString*) address Comment: (NSString*) comment Paid: (int) paid;
+-(NSString*) getName;
 @end

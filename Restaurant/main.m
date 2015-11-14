@@ -12,7 +12,6 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         Restaurant *rest=[Restaurant new];
-        NSLog(@"%d",[rest tips]);
         NSMutableArray * ar=[NSMutableArray new];
         [ar addObject:rest];
         [ar addObject:[[Restaurant alloc] initWithTaste:8 Speed: 9 Quality: 10 Name: @"First"]];
